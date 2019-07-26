@@ -6,7 +6,6 @@ import { Food } from '../../products/food-model';
 // Json-Data
 import { FOOD } from '../../products/food';
 
-
 @Component({
   selector: 'app-waiter',
   templateUrl: './waiter.component.html',
@@ -34,11 +33,7 @@ export class WaiterComponent implements OnInit {
     this.filterMenu(menuType);
     // console.log(menuType);
   }
-  //selectedList: Food;
-  //onSelect(menu: Food): void {
-  //this.selectedList = menu;
-  //console.log(menu)
-  //}
+
   selectedList: Food[] = [];
   onSelect(menu: Food): void {
   this.selectedList.push(menu);
